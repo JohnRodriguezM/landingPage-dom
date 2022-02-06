@@ -1,0 +1,70 @@
+*{
+    padding:0 ;
+    margin:0 ;
+    box-sizing: border-box;
+
+}
+
+#btn-hamburger{
+    position:absolute;
+    top:5px;
+    left:5px;
+}
+.mainContainer{
+    margin-top: 80px;
+    
+}
+
+
+
+#ul-container {
+    list-style: none;
+    background-color:#000;
+    opacity: .75;
+    text-align: center;
+    animation-duration: 2.5s;
+    animation-name: slidein;
+    height:20vh;
+}
+
+.li-nav{
+    color: yellow;
+    opacity: 3.5;
+    z-index: 4;
+    height:4vh;
+}
+
+
+
+@keyframes slideinReverse{
+    from{
+        margin-left: 0%;
+        width:300%
+    }
+    to{
+        margin-right: 0%;
+        width: 100%;
+    }
+}
+
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+// para un uso de toggle
+.visible{
+    display:block;
+}
+.invisible{
+    display:none;
+    transition: display 5s;
+}

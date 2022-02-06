@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#btn-hamburger {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.mainContainer {
+  margin-top: 80px;
+}
+
+#ul-container {
+  list-style: none;
+  background-color: #000;
+  opacity: 0.75;
+  text-align: center;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  height: 20vh;
+}
+
+.li-nav {
+  color: yellow;
+  opacity: 3.5;
+  z-index: 4;
+  height: 4vh;
+}
+
+@-webkit-keyframes slideinReverse {
+  from {
+    margin-left: 0%;
+    width: 300%;
+  }
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slideinReverse {
+  from {
+    margin-left: 0%;
+    width: 300%;
+  }
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.visible {
+  display: block;
+}
+
+.invisible {
+  display: none;
+  -webkit-transition: display 5s;
+  transition: display 5s;
+}
